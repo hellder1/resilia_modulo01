@@ -1,26 +1,22 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # ## Step 01
 
-# In[ ]:
 
 
-def prints_tela_inicial():
-    print("Bem vindo ao sistema Connect AI")
-    print("\nSelecione uma opção para atendimento:")
-    print("\n1 - Contratar plano")
-    print("2 - Assistência técnica")
-    print("3 - Financeiro")
-    print("4 - Assinatura de contrato")
-    print("5 - Encerra atendimento")
-    entrada_inicial=int(input("\nSelecione uma opção: "))
-    return entrada_inicial
+def prints_tela_inicial(): #Funcao recebe prints_tela_inicial 
+     #printar todas as mensagem abaixo para o usuario
+    print("Bem vindo ao sistema Connect AI") #Imprima a mensagem
+    print("\nSelecione uma opção para atendimento:") # "  "
+    print("\n1 - Contratar plano") # "  "
+    print("2 - Assistência técnica") # "  "
+    print("3 - Financeiro") # "  "
+    print("4 - Assinatura de contrato") # "  "
+    print("5 - Encerra atendimento") # "  "
+    entrada_inicial=int(input("\nSelecione uma opção: ")) #Entrada incial recebe numero inteiro digitado pelo usuario
+    return entrada_inicial #Armazena (Captura) entrada_inicial dado pelo usuario
 
 
 # ## Step 02
 
-# In[ ]:
 
 
 def main():
@@ -35,7 +31,7 @@ def main():
         print("Obrigado e volte sempre!")
     else:
         pass
-    
+         
     user_option=0
     while user_option != 4:
         # Contratar plano
