@@ -7,14 +7,14 @@
 
 
 def prints_tela_inicial():
-    print("Bem vindo ao sistema abcd")
+    print("Bem vindo ao sistema Connect AI")
     print("\nSelecione uma opção para atendimento:")
     print("\n1 - Contratar plano")
     print("2 - Assistência técnica")
     print("3 - Financeiro")
     print("4 - Assinatura de contrato")
     print("5 - Encerra atendimento")
-    entrada_inicial=int(input("Selecione uma opção: "))
+    entrada_inicial=int(input("\nSelecione uma opção: "))
     return entrada_inicial
 
 
@@ -26,7 +26,7 @@ def prints_tela_inicial():
 def main():
     
     # printa as opções da primeira tela
-    #prints_tela_inicial()
+    # prints_tela_inicial()
     # armazena a escolha uma variável
     entrada_inicial = prints_tela_inicial()
     
@@ -37,26 +37,28 @@ def main():
         pass
     
     user_option=0
-    while user_option != 5:
+    while user_option != 4:
         # Contratar plano
         if entrada_inicial == 1:
-            print("Selecione uma das opções disponíveis abaixo")
-            print("\n*PLANO 1* 10Gb / mês por R$:49,99")
-            print("***PLANO 2*** 50Gb / mês por R$:69,99")
-            print("\n4 - Para retornar ao menu inicial")
-            print("5 - Para encerrar atendimento")
-            user_option = int(input("Digite uma opção: "))
+            
+            print("Selecione uma das opções disponíveis abaixo:")
+            print("\n1- Plano 1 10Gb | por R$ 49,99 ao mês")
+            print("2- Plano 2 50Gb | por R$ 69,99 ao mês")
+            print("3- Para retornar ao menu inicial")
+            print("4- Para encerrar atendimento")
+            user_option = int(input("\nDigite a opção desejavel: "))
             
             # Finaliza contratação
-            if user_option == 1 or user_option == 2:
-                print("Plano contratado com sucesso!!!")
-                print("\n Deixe seu whats para que possamos agendar a instalação e forma de pagamento")
-                whats_user=int(input("Digite seu número com ddd:"))
-                print("Estamos felizes por escolher o serviço de internet que ajuda a mudar o mundo :)")
+            if user_option == 1 or user_option == 2: 
+                print("\nPlano contratado com sucesso!!!")
+                print("\nDeixe seu whats para que possamos agendar a instalação e forma de pagamento.")
+                whats_user=int(input("\nDigite seu número com ddd: "))
+                print("\nEstamos felizes por ter você como nosso cliente, seja bem-vindo.")
                 break
             # chama a função principal e reinicia o ciclo
-            elif user_option == 4:
+            elif user_option == 3:
                 main()
+            
                 
         # Assistência técnica
         elif entrada_inicial == 2:
