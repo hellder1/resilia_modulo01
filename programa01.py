@@ -94,7 +94,7 @@ def main(): #Funcao recebe main(menu)
                 print("Obrigado, Connect AI agradece seu contato, logo entraremos em contato") # Imprime a menssagem.
                 break # interronpe a funcao
                  
-        # Assinatura de contrato        
+        # 4- Assinatura de contrato        
         elif entrada_inicial == 4: #Se a entrada_inicial for igual a 4;
             email_user=str(input("Digite seu email para envio na copia assinada")) #Recebe dados do usuario em string(mensagem)
             assinatura=str(input("digite seu nome completo com a frase de segurança enviada por email para assinatura digital")) # "  "
