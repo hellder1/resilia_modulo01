@@ -91,8 +91,8 @@ def main(): #Funcao recebe main(menu)
                 print("Encaminhando para o próximo atendente disponível")  #imprima a mensagem
                 print("Deixe seu número, entraremos em contato com urgência!") # "  "
                 whats_user=int(input("Número whats com ddd:")) #Whats_user recebe numero inteiros digitado pelo usuario
-                #print (mensagem de encerramento)
-                #falta um break
+                print("Obrigado, Connect AI agradece seu contato, logo entraremos em contato") # Imprime a menssagem.
+                break # interronpe a funcao
                  
         # Assinatura de contrato        
         elif entrada_inicial == 4: #Se a entrada_inicial for igual a 4;
