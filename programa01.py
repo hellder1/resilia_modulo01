@@ -1,6 +1,4 @@
-# ## Step 01
-
-
+# Chatbot Conect AI, Atendimento automatizado para provedores de internet.
 
 def prints_tela_inicial(): #Funcao recebe prints_tela_inicial 
      #printar todas as mensagem abaixo para o usuario
@@ -13,11 +11,6 @@ def prints_tela_inicial(): #Funcao recebe prints_tela_inicial
     print("5 - Encerra atendimento") # "  "
     entrada_inicial=int(input("\nSelecione uma opção: ")) #Entrada incial recebe numero inteiro digitado pelo usuario
     return entrada_inicial #Armazena (Captura) entrada_inicial dado pelo usuario
-
-
-# ## Step 02
-
-
 
 def main(): #Funcao recebe main(menu)
     
@@ -33,7 +26,7 @@ def main(): #Funcao recebe main(menu)
         pass #Passa para outra opção abaixo
          
     user_option=0 #User option recebe 0 para atribuir valor a variavel
-    while user_option != 4: #Enquanto user_option for diferente de 5 de a seguintes opcoes abaixo
+    while user_option != 4: #Enquanto user_option for diferente de 4 dê as seguintes opcoes abaixo
 
         # 1 - Contratar plano
         if entrada_inicial == 1: #Se a entrada_inicial for igual a 1
@@ -57,7 +50,6 @@ def main(): #Funcao recebe main(menu)
             elif user_option == 3: #Se user_option for igual a 4
                 main()  # retorne a funcao main(menu)
             
-                
         # 2 - Assistência técnica
         elif entrada_inicial == 2:  #Se a entrada_inicial for igual 2 
             print("Selecione uma das opções abaixo")  #Imprima a mensagem
@@ -74,14 +66,12 @@ def main(): #Funcao recebe main(menu)
                 print("Obrigado, Connect AI agradece seu contato, logo entraremos em contato") #Imprima a mensagem
                 break #Interrompe a função
             
-            
             elif user_option == 3: #Se  o user_option for igual a 3
                 main()  # chama a função principal e reinicia o ciclo
             # Encerra o while mudando a condição de 5 para 4
             elif user_option == 4: #Se o user_option for igual a 4;
                 print("Obrigado e volte sempre!") #Imrpima a mensagem
                 break  #Interrompe a função
-
 
         # 3 - Financeiro
         elif entrada_inicial == 3:  #Se a entrada_inicial for igual a 3;
@@ -91,7 +81,6 @@ def main(): #Funcao recebe main(menu)
             print("4 - Para retornar ao menu inicial") # " "
             print("5 - Encerrar atendimento") # " "
             user_option = int(input("Digite uma opção: ")) #user_oprtion recebe numeros inteiros digitado pelo usuario
-            
             
             if user_option == 1: #Se user_option for igual a 1
                 email_user=str(input("Digite seu email para recebimento: ")) #email recebe string (mensagem) dado pelo usuario. 
@@ -104,8 +93,7 @@ def main(): #Funcao recebe main(menu)
                 whats_user=int(input("Número whats com ddd:")) #Whats_user recebe numero inteiros digitado pelo usuario
                 #print (mensagem de encerramento)
                 #falta um break
-                
-                
+                 
         # Assinatura de contrato        
         elif entrada_inicial == 4: #Se a entrada_inicial for igual a 4;
             email_user=str(input("Digite seu email para envio na copia assinada")) #Recebe dados do usuario em string(mensagem)
@@ -116,12 +104,5 @@ def main(): #Funcao recebe main(menu)
         else: #Senão
             print("Agradecemos o contato.") # Imprima a mensagem
             break #Interrompe a função
-            
-
-
-# ## Step 03
-
-
 # chama a função principal
 main()
-
